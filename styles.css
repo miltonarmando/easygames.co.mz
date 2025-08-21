@@ -29,7 +29,7 @@ body{
 }
 .logo{width:84px;height:84px;object-fit:contain;margin:0 auto 18px;display:block}
 #site-title{font-size:28px;margin:0;color:var(--accent-2);letter-spacing:0.4px}
-.lead{font-size:18px;margin:18px 0 12px;color:#0b1220}
+.lead{font-size:18px;margin:18px 0 12px;color:#ffffff}
 .meta{display:flex;gap:12px;align-items:center;justify-content:center;margin-top:18px}
 .domain{background:linear-gradient(90deg,var(--accent),#4ca92d);padding:8px 12px;border-radius:999px;color:#fff;font-weight:600}
 .status{display:inline-flex;align-items:center;gap:8px;color:var(--accent-2);font-weight:600}
