@@ -3,6 +3,7 @@
   --accent-2:#003567;
   --bg:#ffffff;
   --muted:#0f1720;
+  --lead:#0b1220; /* readable on light background */
 }
 
 *{box-sizing:border-box}
@@ -29,7 +30,7 @@ body{
 }
 .logo{width:84px;height:84px;object-fit:contain;margin:0 auto 18px;display:block}
 #site-title{font-size:28px;margin:0;color:var(--accent-2);letter-spacing:0.4px}
-.lead{font-size:18px;margin:18px 0 12px;color:#ffffff}
+.lead{font-size:18px;margin:18px 0 12px;color:var(--lead)}
 .meta{display:flex;gap:12px;align-items:center;justify-content:center;margin-top:18px}
 .domain{background:linear-gradient(90deg,var(--accent),#4ca92d);padding:8px 12px;border-radius:999px;color:#fff;font-weight:600}
 .status{display:inline-flex;align-items:center;gap:8px;color:var(--accent-2);font-weight:600}
@@ -37,7 +38,7 @@ body{
 .foot{margin-top:20px;color:#56606a;font-size:14px}
 
 @media (prefers-color-scheme: dark){
-  :root{--bg:#071018;--muted:#e6f0ef}
+  :root{--bg:#071018;--muted:#e6f0ef;--lead:#ffffff}
   body{background:linear-gradient(180deg, #03131a 0%, #051820 100%);}
   .card{border:1px solid rgba(255,255,255,0.04);box-shadow:0 10px 30px rgba(0,0,0,0.6)}
   .domain{color:#071018}
