@@ -24,6 +24,9 @@ Observações
 - Se usar GitHub Actions ou workflows para deploy automático, não é necessário fazer mais nada além de push para a rama configurada.
 - Se o GitHub Pages não refletir as alterações, aguarde alguns minutos e limpe o cache do navegador.
 
-Se quiser, eu posso:
-- Criar um workflow GitHub Actions para deploy automático; ou
-- Atualizar o README com instruções específicas para o seu repositório.
+Servidor Local:
+No PowerShell
+`
+Get-Job | Where-Object { $_.State -eq 'Running' } | Stop-Job ; Get-Job | Where-Object { $_.State -ne 'Running' } | Remove-Job ; Start-Job -ScriptBlock { Set-Location 'C:\Projects\easygames'; python -m http.server 8000 } ; Start-Sleep -Seconds 1 ; Start-Process 'http://localhost:8000'
+`
+
